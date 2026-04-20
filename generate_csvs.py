@@ -78,7 +78,7 @@ def build_location_management(token):
     rows = []
     for row in ws.iter_rows(min_row=2, values_only=True):
         location = row[col["Location"]]
-        paychex = row[col["Paychex Name"]]
+        paychex = row[col["Paylocity Name"]]
         if not location:
             continue
         for mgr_col in ("RM I", "RM II", "RD"):
